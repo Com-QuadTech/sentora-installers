@@ -39,8 +39,8 @@
 SENTORA_INSTALLER_VERSION="master"
 SENTORA_CORE_VERSION="1.0.1"
 
-PANEL_PATH="/etc/sentora"
-PANEL_DATA="/var/sentora"
+PANEL_PATH="/etc/Viona"
+PANEL_DATA="/var/Viona"
 PANEL_UPGRADE=false
 
 #--- Display the 'welcome' splash/user warning info..
@@ -75,7 +75,7 @@ if [[ "$OS" = "CentOs" && ("$VER" = "6" || "$VER" = "7" ) ||
       "$OS" = "debian" && ("$VER" = "7" || "$VER" = "8" ) ]] ; then
     echo "Ok."
 else
-    echo "Sorry, this OS is not supported by Sentora." 
+    echo "Sorry, this OS is not supported by Viona." 
     exit 1
 fi
 
@@ -86,7 +86,7 @@ if [[ "$OS" = "CentOs" ]] ; then
     elif [[ "$ARCH" != "x86_64" ]]; then
         echo "Unexpected architecture name was returned ($ARCH ). :-("
         echo "The installer have been designed for i[3-6]8- and x86_64' architectures. If you"
-        echo " think it may work on your, please report it to the Sentora forum or bugtracker."
+        echo " think it may work on your, please report it to the Viona forum or bugtracker."
         exit 1
     fi
 fi
@@ -140,7 +140,7 @@ fi
 # Note : Postfix is installed by default on centos netinstall / minimum install.
 # The installer seems to work fine even if Postfix is already installed.
 # -> The check of postfix is removed, but this comment remains to remember
-# only check for sentora installed systems zpanel can now upgrade using this script
+# only check for Viona installed systems zpanel can now upgrade using this script
 if [ -L "/etc/zpanel" ] && [ -d "/etc/zpanel"  ]; then
     pkginst="n"
     pkginstlist=""
