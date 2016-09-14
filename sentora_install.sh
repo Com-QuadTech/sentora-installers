@@ -46,7 +46,7 @@ PANEL_UPGRADE=false
 #--- Display the 'welcome' splash/user warning info..
 echo ""
 echo "############################################################"
-echo "#  Welcome to the Official Sentora Installer $SENTORA_INSTALLER_VERSION  #"
+echo "#  Welcome to the Official Viona Installer $SENTORA_INSTALLER_VERSION  #"
 echo "############################################################"
 
 echo -e "\nChecking that minimal requirements are ok"
@@ -101,7 +101,7 @@ fi
 # Check for some common control panels that we know will affect the installation/operating of Sentora.
 if [ -e /usr/local/cpanel ] || [ -e /usr/local/directadmin ] || [ -e /usr/local/solusvm/www ] || [ -e /usr/local/home/admispconfig ] || [ -e /usr/local/lxlabs/kloxo ] ; then
     echo "It appears that a control panel is already installed on your server; This installer"
-    echo "is designed to install and configure Sentora on a clean OS installation only."
+    echo "is designed to install and configure Viona on a clean OS installation only."
     echo -e "\nPlease re-install your OS before attempting to install using this script."
     exit 1
 fi
